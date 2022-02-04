@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.back_color{
+    background: #E5E5E5;
+    position: relative;
+}
+/*navigtion*/
+
+.navigation{
+    background: #FFFFFF;
+    border-radius: 0px 40px 40px 0px;
+    max-width: 100%;
+    width: 60px;
+    height: 780px;
+    top: 20px;  
+    position: fixed;
+}
+.navigation.nav-open{  
+    width: 346px;
+}
+.navigation .response{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.navigation .response a{
+    padding: 10px;
+    color: #D04C8D;
+    font-size: 22px;
+}
+.navigation .logo{
+    position: relative;
+    text-align: center;
+    margin: 50px 0 40px 0;
+    visibility: hidden;
+}
+.navigation .logo.logo_close{
+   visibility: visible;
+}
+.navigation .logo::after{
+    content: "University";
+    position: absolute;
+    top: 29px;
+    right: 89px;
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    color: #D04D8B;
+}
+.navigation .navbar .nav-item{
+    margin-left: 15px;
+    display: block;
+    padding: 20px 0 20px;
+}
+.navigation .navbar .nav-item.item_close{
+    padding: 20px 0 20px;
+    margin-left: 75px;
+}
+.navigation .navbar li a{
+    display: flex;
+    align-items: center;
+
+}
+.navigation .navbar li .active{
+    color: #D04D8B;
+    border-right: 4px solid #D04D8B;
+}
+.navigation .navbar li .active .icon,.navigation .navbar li .active .content{
+    color: #D04D8B;
+}
+.navigation .navbar li a:hover .icon,.navigation .navbar li a:hover .content{
+    color: #D04D8B;
+}
+.navigation .navbar li a .icon{
+    color: #ACACAC;
+    margin-right: 10px;
+    font-size: 25px;
+    max-width: 30px;
+    width: 100%;
+}
+.navigation .navbar li a .content{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #ACACAC;
+    text-transform: capitalize;
+    margin-left: 10px;
+    display: none;
+}
+.navigation .navbar li a .content.con_text{
+   display: block;
+}
+/*right_coloum*/
+.right_coloum{
+    padding-left: 80px;
+}
+.right_coloum.nav-colse{
+    padding-left: 346px; 
+    padding-top: 30px;
+}
+.resp{
+    padding: 10px 70px 10px 50px;
+}
+/*top_nav*/
+.top_nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 5px 0;
+    position: sticky;
+    top: 0;
+    background: #E5E5E5;
+    z-index: 10;
+}
+.top_nav .box{
+    display: flex;
+    align-items: center;
+}
+.top_nav .search-box{
+    display: flex;
+    align-items: center;
+    color: #D04C8D;
+}
+.top_nav .search-box .search_hd{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    display: none;
+    margin-right: 10px;
+    color: #D04C8D;
+}
+.top_nav .search-box .search_hd.search-open{
+    display: block;
+    color: #D04C8D;
+}
+.top_nav .search-box .search_fd a{
+    padding: 10px;
+    color: #D04C8D;
+    font-size: 22px;
+}
+.top_nav .icon a{
+    padding: 10px;
+    color: #D04C8D;
+    font-size: 22px;
+}
+.Ellipse{
+    position: relative;
+}
+.college{
+    color: #D04C8D;
+    font-size: 22px;
+    position: absolute;
+    z-index: 5;
+    right: 6px;
+    bottom: 3px; 
+}
+/*good*/
+.good{
+    margin: 10px 0 20px 0 ;
+}
+.good h2{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.good .box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.good .boxs{
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 33%;
+    margin: 5px 5px;
+    padding: 20px;
+}
+.good .boxs .number{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 54px;
+    color: #202020;
+}
+.good .boxs p{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #D04C8D;text-transform: capitalize;
+}
+/*frame*/
+.frame{
+    display: flex;
+    width: 100%;
+    margin: 5px;
+}
+/*average*/
+.frame .average{
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+.frame .average h5{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #D04C8D;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.frame .average h5::first-letter{
+    text-transform: capitalize;
+}
+.frame .average .byr{
+    display: inline-block;
+    text-align: left;
+    margin: 20px 0;
+}
+.frame .average li a{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #374151;
+    text-transform: capitalize;
+}
+.frame .average ul li{
+    position: relative;
+    text-transform: capitalize;
+}
+.frame .average ul .blue::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 9px;
+    left: -11px;
+    background-color:#44439E;
+    border-radius: 50px;
+}
+.frame .average ul .yellow::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 9px;
+    left: -11px;
+    background-color:#FFC107;
+    border-radius: 50px;
+}
+.frame .average ul .rose::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 9px;
+    left: -11px;
+    background-color:#FF7BBE;
+    border-radius: 50px;
+}
+/*group*/
+.group{
+    width: 70%;
+    margin: 0  0  5px 20px ;
+}
+/*compar*/
+.group .compar{
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    padding: 40px;
+   
+}
+.group .compar .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group .compar .heading h3{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #374151;
+}
+/*prof*/
+.group .compar .prof{
+    margin: 15px 0;
+}
+.group .compar .prof .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #374151;
+    text-transform: capitalize;
+}
+.group .compar .prof .color{
+    display: flex;
+    width: 100%;
+    height: 12px;
+    margin: 5px 0;
+}
+.group .compar .prof .color .left{
+    width: 43%;
+    background: #504F8C;
+}
+.group .compar .prof .color .right{
+    width: 57%;
+    background: #D04C8D;
+}
+.group .compar .prof .fooder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group .compar .prof .fooder > :first-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #504F8C;
+    text-transform: capitalize;
+}
+.group .compar .prof .fooder > :last-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #D04C8D;
+    text-transform: capitalize;
+}
+
+/*it*/
+.group .compar .it{
+    margin: 15px 0;
+}
+.group .compar .it .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #374151;
+    text-transform: capitalize;
+}
+.group .compar .it .color{
+    display: flex;
+    width: 100%;
+    height: 12px;
+    margin: 5px 0;
+}
+.group .compar .it .color .left{
+    width: 19%;
+    background: #504F8C;
+}
+.group .compar .it .color .right{
+    width: 81%;
+    background: #D04C8D;
+}
+.group .compar .it .fooder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group .compar .it .fooder > :first-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #504F8C;
+    text-transform: capitalize;
+}
+.group .compar .it .fooder > :last-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #D04C8D;
+    text-transform: capitalize;
+}
+/*fact*/
+.group .compar .fact{
+    margin: 15px 0;
+}
+.group .compar .fact .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #374151;
+    text-transform: capitalize;
+}
+.group .compar .fact .color{
+    display: flex;
+    width: 100%;
+    height: 12px;
+    margin: 5px 0;
+}
+.group .compar .fact .color .left{
+    width: 68%;
+    background: #504F8C;
+}
+.group .compar .fact .color .right{
+    width: 32%;
+    background: #D04C8D;
+}
+.group .compar .fact .fooder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group .compar .fact .fooder > :first-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #504F8C;
+    text-transform: capitalize;
+}
+.group .compar .fact .fooder > :last-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #D04C8D;
+    text-transform: capitalize;
+}
+/*other*/
+.group .compar .other{
+    margin: 15px 0;
+}
+.group .compar .other .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #374151;
+    text-transform: capitalize;
+}
+.group .compar .other .color{
+    display: flex;
+    width: 100%;
+    height: 12px;
+    margin: 5px 0;
+}
+.group .compar .other .color .left{
+    width: 94%;
+    background: #504F8C;
+    
+}
+.group .compar .other .color .right{
+    width: 6%;
+    background: #D04C8D;
+}
+.group .compar .other .fooder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group .compar .other .fooder > :first-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #504F8C;
+    text-transform: capitalize;
+}
+.group .compar .other .fooder > :last-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #D04C8D;
+    text-transform: capitalize;
+}
+/*student*/
+.group .student{
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    padding: 40px;
+    margin: 15px 0;
+    text-align: center;
+}
+.group .student .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.group .student .heading h3{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #374151;
+}
+/*hr_roule*/
+.hr_roule{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+/*fooder*/
+.fooder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.fooder .left{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9A9A9A;
+}
+.fooder .right{
+    font-family: General Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9A9A9A;
+}
+
+
+
+
+
+
+
+              /*------------------responsive---------------------*/
+@media only screen and (max-width:1024px){
+
+/*navigation*/
+.navigation.nav-open{
+    width: 200px;
+}
+.navigation .navbar .nav-item.item_close{
+    margin-left: 10px;
+}
+/*right_coloum*/
+.right_coloum.nav-colse{
+    padding-left: 190px; 
+}
+.resp{
+    padding: 10px 20px;
+}
+.good .box{
+    flex-wrap: wrap;
+}
+.good .boxs{
+    width: 100%; 
+}
+/*frame*/
+.frame{
+    flex-wrap: wrap;
+}
+/*average*/
+.frame .average{
+    width: 50%;
+    margin: 0 auto;
+}
+/*group*/
+.group{
+    width: 100%;
+    margin-top: 15px;
+}
+/*fooder*/
+.fooder{
+    flex-wrap: wrap;
+}
+.fooder .left{
+    width: 100%;
+}
+.fooder .right{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+
+}
+@media only screen and (max-width:414px){
+
+.navigation{
+    z-index: 999999;
+}  
+.navigation .close.close_icon{
+    visibility: visible;
+    position: absolute;
+    right: 8px;
+    top: 19px;
+} 
+.right_coloum.nav-colse{
+    padding-left: 62px;
+}
+ /*good*/   
+.good .box{
+    flex-wrap: wrap;
+}
+.good .boxs{
+    width: 100%;
+    
+}
+/*frame*/
+.frame{
+    flex-wrap: wrap;
+}
+/*average*/
+.frame .average{
+    width: 100%;
+}
+.frame .group{
+    width: 100%;
+    margin-top: 15px;
+}
+.frame .average li a {
+    font-size: 14px;
+}
+/*group*/
+.group{
+    margin: 0  0  5px 0px ;
+}
+.group .compar .prof .head {
+    font-size: 12px;
+
+}
+.group .compar .it .head {
+    font-size: 12px;
+
+}
+.group .compar .fact .head {
+    font-size: 12px;
+
+}
+.group .compar .other .head {
+    font-size: 12px;
+
+}
+/*compar*/
+.group .compar{
+    padding: 10px;
+   
+}
+/*student*/
+.group .student{
+    padding: 10px;
+}
+
+
+
+
+
+
+}
